@@ -1,0 +1,1243 @@
+
+Help me build a prompt on Replit design for a new app that is for field agents who are being paid per business served in an uber model that is hyperlocal
+
+go live
+Receive appointments
+See how much they earn from an appointment
+Check in geolocation when there
+$50 to show up, $100 to zoom, $1,000 one time to close
+Maintenance done by cal center in middle America
+If not checking in, receive push notifications how much money is being left on the table
+Training materials and videos in app
+Auto enrich with ai, context for the meeting, call recording, suggested talking points, suggested sales packages
+Zoom in the replit coder ability
+Route planning, see route and stops and time for trip
+Interporates with desktop app
+Apply on the app to be a rep
+Job postings can just advertise the job with a link - completely self service
+KYC flow - drivers license , background check, etc for rep applicants
+Recording the consultation for training and feedback
+Referral system - paid
+Call center in cheap middle America staffed with friendly people for account maintenance
+Lead follow ups and follow up schedule
+$50 per showing up, $100 for zoom, $1,000 for close
+Show nearby offices if they're in the neighborhood for a kicker bonus Other things to think about
+someone to post jobs in every city to drive traffic to the app
+Gus training material has to be great
+Ability to review applicants and confirm or reject them
+Show more
+
+Identified clarifying questions to refine comprehensive app prompt.
+
+
+
+Field Agent App - Clarifying Questions
+This is a robust concept! Before I build out a comprehensive Replit prompt, I need to understand a few things better to make sure the prompt captures your vision accurately:
+
+Core Business Questions
+What are the field agents selling/providing? Is this B2B sales for a specific product/service (solar, telecom, insurance, etc.), or is this a platform that could be white-labeled for different industries?
+What does "go live" toggle do exactly? Does it show the agent as available for new appointments, or does it activate GPS tracking, or both?
+"Interoperates with desktop app" - Is there an existing desktop system this needs to connect to? What data needs to sync?
+Who books the appointments? Does the call center schedule them, do businesses self-book, or does the agent prospect and book themselves?
+Technical Scope Questions
+Target platforms? Mobile-first (React Native/Flutter for iOS + Android), or web app that's mobile-responsive?
+Zoom integration - Should the app launch native Zoom, or embed video calling within the app itself?
+Background check provider preference? (Checkr, Sterling, etc.) or build integration flexibility?
+Payment rails for rep earnings? Stripe Connect, direct ACH, or integration with existing payroll?
+Naming & Branding
+Does this app have a name yet? Or should I leave that as a placeholder?
+Who is "Gus" referenced in training materials?
+B2B sales for AI automation and AI vibe coding services
+opportunities become available after telesales team has called in
+it needs to interoperate with a web app that the telesales team is using to book field appointments
+call center schedules, agent can prospect and book themselves
+whatever makes most sense for a prototype but can easily convert to an ios and android native app
+WebRTC integratoin
+generic open source one to start
+stripe connect
+
+
+Synthesized requirements and identified clarification gaps.
+
+
+
+Great answers! A few more quick clarifications before I build this out:
+
+Final Questions
+App name? Should I use a placeholder like [APP_NAME] or do you have something in mind?
+Who is "Gus"? You mentioned "Gus training material has to be great" - is this a person, a mascot, or a typo?
+The web app for telesales - does this already exist, or are we building both the field agent mobile app AND the telesales web app as part of this project?
+AI enrichment sources - for the "auto enrich with AI" feature (company context, suggested talking points, sales packages), should this pull from:
+Public data (LinkedIn, company websites, news)?
+Internal CRM data from the telesales web app?
+Both?
+Admin dashboard - who needs to:
+Review/approve rep applications (KYC)?
+Post job listings?
+View rep performance/earnings?
+Manage territories/routing?
+Is this the same telesales web app, or a separate admin portal?
+Lead source for self-prospecting - when agents prospect themselves, do they:
+See a map of businesses in their area?
+Get a list from the system?
+Manually enter leads they find?
+app is called Recrowdly
+
+
+Acknowledged app name, identified remaining clarifying questions.
+
+
+Got it - Recrowdly.
+
+Still need answers on these to build you a tight prompt:
+
+Who is "Gus"? (You mentioned "Gus training material has to be great")
+Telesales web app - already exists, or building both systems together?
+AI enrichment - pull from public data (LinkedIn, websites), internal CRM data, or both?
+Admin functions (reviewing applicants, posting jobs, managing territories) - separate admin portal, or built into the telesales web app?
+Self-prospecting leads - agents see a map of nearby businesses, get system-generated lists, or manually enter their own?
+Gus is the current field rep
+telesales app already exists
+
+Synthesized user responses and identified remaining clarifications needed.
+
+
+
+Got it - Gus is your star rep whose methods become the training foundation. And we're building Recrowdly to integrate with the existing telesales system.
+
+Three more and I'll have everything:
+
+AI enrichment sources - should the meeting context/talking points pull from:
+Public data only (LinkedIn, company websites, news)?
+Internal data from the existing telesales app (call notes, previous interactions)?
+Both?
+Admin portal - should reviewing applicants, posting jobs, and viewing rep performance be:
+A separate admin dashboard we're building?
+Added into the existing telesales web app?
+Self-prospecting - when agents find their own leads, do they:
+See a map of nearby businesses to cold-call?
+Get system-suggested leads?
+Manually enter businesses they discover?
+AI enchriment is need and Sokol
+built into the telesales web app
+all of the above, their is an incentive for cold calling places not in the database already by visiting
+
+Deciphered user requirements and identified clarification needed.
+
+
+
+Almost there - one clarification:
+
+What is "Sokol"? Is this:
+
+An internal tool/system you already use?
+A third-party API or data provider?
+A typo (maybe "social")?
+Once I know this, I'll build out the full Replit prompt for Recrowdly.
+
+A third-party API or data provider?
+
+Other functionality
+
+booking calendar integrated in app - rolls up to internal visibility across all reps 8:31
+CRM app and/or field all - way for appointment setter to flag phone numbers that don't work to send back to lead gen team
+Warm leads that aren't responsive get added to a follow up queue
+Verdi Ergün  8:12 PM
+Warm leads that are not interested get added to a follow up queue  (edited) 
+Verdi Ergün  8:46 PM
+10 to 15 new leads a day, we specialize in getting high value customers like root canals etc
+8:50
+3 actors:
+* appointment setter
+* Gig economy
+* Consultative sales
+Record the consultative sales calls, turn them into highly personalized email text and phone campaigns (I remember you said you wanted more sales, we just added a model that does that, here's my calendar to book, I'll be in your neighborhood on Tuesday )
+8:50
+* the gig economy people should know that they are going to meet resistance (no appointment scheduled, doctor isn't in, etc) with how they handle those situations
+
+Show more
+
+Synthesized multi-actor sales system with integrated CRM and campaign automation.
+
+
+This context is really helpful - I'm seeing the full picture now. Let me confirm I understand the ecosystem:
+
+The Three Actors
+Role	Tool	Function
+Appointment Setter	Existing telesales web app	Cold calls leads, books appointments for field reps
+Gig Economy Field Rep	Recrowdly (what we're building)	Shows up to appointments, handles resistance, warms the lead
+Consultative Sales Closer	?	Does the actual close (Zoom or in-person), earns the $1,000
+Clarifying Questions
+Is the "consultative sales closer" a separate person from the gig economy field rep? Or can a field rep graduate to doing closes themselves?
+The $1,000 close bonus - does this go to:
+The field rep who warmed the lead?
+The consultative closer who sealed it?
+Split between them?
+Recording consultative calls → personalized campaigns - is this automated AI follow-up, or does it feed a human to execute?
+Target vertical - you mentioned dental (root canals). Is Recrowdly specifically for selling AI services to dental practices, or is dental just one example vertical?
+Resistance training - do you want this as:
+Video content from Gus?
+Interactive scenarios/roleplay?
+AI-powered objection handling coach?
+separate person
+field rep
+
+Clarified role distinctions and identified remaining questions.
+
+
+
+Got it - so the field rep earns $1,000 when their warmed lead eventually closes, even though someone else does the actual close. That's a strong incentive structure.
+
+Three more to nail this down:
+
+Recording consultative calls → personalized follow-up campaigns - should this be:
+Fully automated (AI generates and sends emails/texts)?
+AI drafts, human reviews and sends?
+AI drafts, feeds back to appointment setters to execute?
+Target vertical - is Recrowdly built specifically for dental practices, or is dental one example and the platform should be industry-agnostic?
+Resistance training for field reps (handling "no appointment scheduled," "doctor isn't in," etc.) - preferred format:
+Video library from Gus showing how he handles these?
+Interactive scenario simulations?
+AI coach that roleplays objections?
+All of the above?
+AI follow-up to prepare, human to hit send
+dental, lawyer, businesses that need leads and operational improvements
+vidoe content, roleplay objection handling coaching
+
+Synthesized comprehensive gig-economy app architecture with AI enrichment.
+13s
+
+
+
+
+
+
+
+Perfect - I have everything I need. Let me build out the comprehensive Replit prompt for Recrowdly.
+
+Recrowdly - Replit Agent Prompt
+markdown
+# Recrowdly - Field Sales Rep Mobile App
+
+## Overview
+Build a mobile-first progressive web app (PWA) called **Recrowdly** - a gig economy platform for field sales representatives selling AI automation and vibe coding services to local businesses (dental practices, law firms, lead-dependent businesses). The app follows an Uber-style hyperlocal model where reps are paid per business served.
+
+## Tech Stack
+- **Frontend:** React + TypeScript + Tailwind CSS (PWA-ready for future iOS/Android conversion)
+- **Backend:** Node.js + Express or Next.js API routes
+- **Database:** PostgreSQL with Prisma ORM
+- **Auth:** Clerk or Auth.js with phone/email verification
+- **Payments:** Stripe Connect (for rep payouts)
+- **Video:** WebRTC integration for in-app video calls
+- **Maps:** Google Maps API or Mapbox (routing, geolocation, nearby businesses)
+- **AI:** OpenAI API for enrichment, call transcription, campaign generation
+- **External Data:** Sokol API integration for business enrichment
+- **Background Checks:** Open-source/generic integration (Checkr-style webhook pattern)
+- **Push Notifications:** Firebase Cloud Messaging or OneSignal
+- **Storage:** AWS S3 or Cloudflare R2 for video recordings
+
+---
+
+## User Roles & Apps
+
+### 1. Field Rep (This App - Recrowdly Mobile)
+Gig economy workers who show up to appointments, warm leads, handle resistance
+
+### 2. Appointment Setter (Existing Telesales Web App - Integration Only)
+Cold calls leads, books appointments, flags bad phone numbers
+
+### 3. Consultative Sales Closer (Separate Role)
+Does the actual close via Zoom or in-person after rep warms the lead
+
+### 4. Admin (Built into Existing Telesales Web App)
+Reviews applicants, posts jobs, views performance, manages territories
+
+---
+
+## Compensation Structure
+Display prominently throughout the app:
+- **$50** - Showing up to appointment (geolocation verified)
+- **$100** - Completing a Zoom consultation
+- **$1,000** - When the lead they warmed eventually closes (attributed to original field rep)
+- **Bonus kickers** - For visiting nearby offices while in the neighborhood
+- **Cold call bonus** - Incentive for adding businesses not already in the database
+
+---
+
+## Core Features
+
+### 1. Onboarding & Application Flow
+
+#### Job Discovery (Public)
+- Landing page with job postings by city/region
+- Self-service application start (no account needed to begin)
+- Shareable job posting links for recruiting (e.g., recrowdly.com/jobs/miami)
+
+#### Application Flow
+- Personal info collection
+- Resume/work history (optional)
+- Availability and territory preferences
+- Video introduction (60-second pitch)
+
+#### KYC Verification
+- Driver's license upload + OCR extraction
+- Selfie verification (liveness check)
+- Background check consent and initiation
+- Status tracking: Pending → In Review → Approved/Rejected
+- Webhook pattern for background check results
+
+#### Post-Approval Setup
+- Stripe Connect onboarding for payouts
+- Push notification permissions
+- Calendar availability setup
+- Territory selection
+
+---
+
+### 2. Home Dashboard (Authenticated Rep)
+
+#### Go Live Toggle
+- Large, prominent toggle switch
+- When ON: Rep appears available, GPS tracking active, receives new appointments
+- When OFF: No new appointments, existing commitments still visible
+- Visual indicator of live status throughout app
+
+#### Earnings Summary
+- Today's earnings (realized + pending)
+- This week / This month views
+- Breakdown by type ($50 shows / $100 zooms / $1,000 closes)
+- Pending closes (leads warming in pipeline)
+
+#### Upcoming Appointments
+- Next 3 appointments with:
+  - Business name and type (dental, law, etc.)
+  - Address with tap-to-navigate
+  - Scheduled time
+  - Estimated payout
+  - AI-generated context preview (expand for full)
+
+#### Money Left on Table (Urgency Engine)
+- If not live during business hours: "You're missing out on $X in your area right now"
+- Unclaimed appointments nearby
+- Push notification integration for these alerts
+
+---
+
+### 3. Appointments & Scheduling
+
+#### Appointment List View
+- Filter: Today / This Week / All Upcoming / Completed
+- Sort: Time / Distance / Payout
+- Status badges: Scheduled → En Route → Checked In → Completed
+
+#### Appointment Detail View
+- Business info (name, address, type, contact)
+- **AI Enrichment Panel (Sokol + OpenAI):**
+  - Company overview and size
+  - Recent news/social activity
+  - Decision maker info
+  - Previous interactions (from telesales CRM)
+  - Industry-specific pain points
+  - Suggested talking points
+  - Recommended service packages
+- Call recording from appointment setter (if available)
+- Notes from telesales team
+- One-tap navigation button
+
+#### Booking Calendar
+- In-app calendar for self-booked appointments
+- Availability blocks (syncs to internal visibility)
+- Integrates with route planning
+- Rolls up to admin dashboard in telesales app
+
+#### Self-Prospecting
+- **Map View:** See nearby businesses (Google Places API)
+  - Color-coded: In database (blue) vs. New prospect (green = bonus eligible)
+  - Tap to view business details
+  - "Add to my route" button
+- **System Suggestions:** AI-recommended businesses based on:
+  - Proximity to existing appointments
+  - Business type match
+  - No recent contact
+- **Manual Entry:** Add any business with:
+  - Business name, address, contact
+  - How they found it (walk-by, referral, etc.)
+  - Cold call bonus eligibility flag
+
+---
+
+### 4. Route Planning
+
+#### Route View
+- Interactive map with all day's stops
+- Optimized route suggestion
+- Drag to reorder stops
+- Time estimates between stops
+- Total trip duration
+
+#### Turn-by-Turn Integration
+- Deep link to Google Maps / Apple Maps / Waze
+- Return to app after each stop
+
+#### Nearby Opportunities
+- While en route, show nearby offices for kicker bonus
+- "You're 5 min from [Business] - $25 bonus to drop in"
+- Quick-add to route
+
+---
+
+### 5. Check-In & Appointment Execution
+
+#### Geolocation Check-In
+- "Check In" button activates within 100m of appointment
+- GPS verification with timestamp
+- Triggers $50 show-up earning
+- Photo capture option (storefront/office)
+
+#### Resistance Handling Mode
+- Quick-access panel for common objections:
+  - "No appointment scheduled"
+  - "Doctor/Owner isn't in"
+  - "We're not interested"
+  - "Call back later"
+- Each objection shows:
+  - Gus's video response (15-30 sec)
+  - Script/talking points
+  - AI roleplay practice button
+
+#### In-App Video Call (WebRTC)
+- Start Zoom-style consultation from app
+- Auto-recording with consent prompt
+- Screen share capability
+- Triggers $100 Zoom earning on completion
+
+#### Consultation Recording
+- Audio recording for all in-person consultations
+- Transcription via AI
+- Saved to appointment record
+- Used for:
+  - Training and feedback
+  - AI-generated follow-up campaigns
+  - Quality review
+
+#### Check-Out
+- Mark appointment complete
+- Outcome selection:
+  - Warm lead (interested, needs follow-up)
+  - Hot lead (ready for closer)
+  - Not interested (with reason)
+  - Reschedule needed
+  - Bad data (wrong address, closed business, etc.)
+- Notes field
+- Next steps assignment
+
+---
+
+### 6. AI-Powered Follow-Up Engine
+
+#### Post-Consultation Processing
+- AI analyzes call recording/transcript
+- Generates personalized follow-up content:
+  - Email draft referencing specific conversation points
+  - Text message sequence
+  - Phone call script for appointment setter
+- Example: "I remember you mentioned wanting more root canal patients - we just added a model that does exactly that. Here's my calendar to book, I'll be in your neighborhood Tuesday."
+
+#### Follow-Up Queue
+- List of leads requiring follow-up
+- AI-suggested timing based on conversation
+- Draft content ready for human review
+- One-tap to edit and send (or send to appointment setter)
+
+#### Warm Lead Nurturing
+- Leads marked "not responsive" enter automated nurture
+- Rep notified when engagement detected
+- Re-engagement talking points generated
+
+---
+
+### 7. Training Center
+
+#### Video Library
+- Organized by topic:
+  - Getting Started
+  - Handling Resistance (Gus's methods)
+  - Product Knowledge (AI automation, vibe coding)
+  - Industry-Specific (Dental, Legal, etc.)
+  - Closing Techniques
+- Progress tracking
+- Required vs. optional content
+- New content notifications
+
+#### AI Roleplay Coach
+- Interactive objection handling practice
+- AI plays the resistant business owner
+- Scenarios:
+  - "We don't have an appointment"
+  - "The doctor is too busy"
+  - "We already have a marketing company"
+  - "How much does it cost?"
+- Real-time feedback on responses
+- Score and improvement suggestions
+- Leaderboard (optional gamification)
+
+#### Gus's Playbook
+- Best practices documentation
+- Real call recordings (anonymized) with commentary
+- Situation-specific guidance
+- Searchable knowledge base
+
+---
+
+### 8. Earnings & Payments
+
+#### Earnings Dashboard
+- Current balance (available for payout)
+- Pending earnings (awaiting verification/close)
+- Earnings history with filters
+- Breakdown by earning type
+
+#### Transaction History
+- Each appointment with payout status
+- Bonus earnings itemized
+- Referral earnings
+- Deductions (if any)
+
+#### Payout Management (Stripe Connect)
+- Connected bank account management
+- Payout schedule (instant / daily / weekly)
+- Payout history
+- Tax documents (1099 access)
+
+---
+
+### 9. Referral System
+
+#### Rep Referrals
+- Unique referral link/code
+- Share via SMS, email, social
+- Track referral status:
+  - Signed up
+  - Completed KYC
+  - First appointment completed
+- Referral bonus structure (configurable, e.g., $100 per qualified rep)
+
+#### Referral Earnings
+- Separate section in earnings
+- Lifetime referral stats
+
+---
+
+### 10. Lead & CRM Functions
+
+#### Lead Flagging
+- Flag phone numbers that don't work
+- Flag bad addresses
+- Flag closed businesses
+- Flags route back to lead gen team via API
+
+#### Follow-Up Schedule
+- Personal follow-up task list
+- Reminders and notifications
+- Integration with main appointment calendar
+
+#### Pipeline View
+- Leads touched, organized by status
+- Estimated pending earnings
+- Days since last touch
+
+---
+
+### 11. Notifications
+
+#### Push Notification Types
+- New appointment assigned
+- Appointment reminder (1 hour, 15 min)
+- Money left on table alerts
+- Lead status updates (your lead just closed = $1,000!)
+- New training content
+- Application status updates
+- Payout completed
+
+#### In-App Notification Center
+- All notifications in chronological list
+- Mark read/unread
+- Filter by type
+
+---
+
+## API Integration Requirements
+
+### Integration with Existing Telesales Web App
+Build RESTful API endpoints for:
+```
+POST /api/appointments - Create new appointment (from telesales)
+GET /api/appointments - List appointments (filterable)
+PUT /api/appointments/:id - Update appointment status
+POST /api/appointments/:id/checkin - Field rep check-in
+POST /api/appointments/:id/checkout - Field rep check-out
+
+GET /api/leads - Leads assigned to rep
+PUT /api/leads/:id - Update lead status
+POST /api/leads/:id/flag - Flag bad data
+
+GET /api/reps - List all reps (admin)
+GET /api/reps/:id - Rep detail with performance
+PUT /api/reps/:id/status - Approve/reject applicant
+
+POST /api/calendar/availability - Set rep availability
+GET /api/calendar/slots - Get available slots for booking
+
+POST /api/recordings - Upload consultation recording
+GET /api/recordings/:id/transcript - Get AI transcript
+
+POST /api/followups - Create follow-up task
+GET /api/followups - List follow-ups for rep
+PUT /api/followups/:id - Mark complete/reschedule
+
+Webhook endpoints for:
+- Background check status updates
+- Stripe Connect events
+- Lead close events (trigger $1,000 payout)
+```
+
+### External API Integrations
+- **Sokol API:** Business enrichment data
+- **OpenAI API:** Transcription, content generation, roleplay AI
+- **Google Maps API:** Geocoding, routing, places search
+- **Stripe Connect:** Payouts and account management
+- **Firebase/OneSignal:** Push notifications
+- **Twilio (optional):** SMS notifications and follow-up sends
+
+---
+
+## Database Schema (Key Tables)
+```
+Users (reps)
+- id, email, phone, name, status (applicant/approved/suspended)
+- stripe_connect_id, kyc_status, background_check_status
+- territory, created_at
+
+Applications
+- id, user_id, resume_url, video_url, license_data
+- background_check_id, status, reviewed_by, reviewed_at
+
+Appointments
+- id, rep_id, business_id, scheduled_at
+- status, checkin_at, checkout_at, outcome
+- recording_url, transcript, ai_summary
+- payout_amount, payout_status
+
+Businesses
+- id, name, type, address, lat, lng
+- phone, email, contact_name
+- source (telesales/self-prospected), in_database_at
+
+Leads
+- id, business_id, rep_id, status
+- follow_up_date, notes, close_value
+- originated_from (appointment_id)
+
+Earnings
+- id, rep_id, appointment_id, type, amount
+- status (pending/verified/paid), paid_at
+
+Referrals
+- id, referrer_id, referred_id
+- status, bonus_paid, bonus_amount
+
+TrainingProgress
+- id, rep_id, content_id, completed_at, score
+
+FollowUps
+- id, rep_id, lead_id, scheduled_at
+- ai_content, sent_at, channel
+```
+
+---
+
+## UI/UX Guidelines
+
+### Design Principles
+- Mobile-first, thumb-friendly
+- High contrast for outdoor visibility
+- Large tap targets for on-the-go use
+- Minimal typing required (voice input where possible)
+- Earnings always visible (motivation)
+
+### Color Scheme
+- Primary: Energetic, motivational (suggest orange or green)
+- Earnings: Always in green
+- Alerts/urgency: Red/orange
+- Success states: Green checks
+
+### Key Screens (Priority Order)
+1. Home Dashboard
+2. Appointment Detail with AI Enrichment
+3. Route Planning Map
+4. Check-In Flow
+5. Earnings Dashboard
+6. Training Center
+7. Application/Onboarding Flow
+
+---
+
+## MVP Scope (Phase 1)
+
+Build these first:
+1. ✅ Application flow with KYC
+2. ✅ Home dashboard with Go Live toggle
+3. ✅ Appointment list and detail views
+4. ✅ Geolocation check-in/check-out
+5. ✅ Basic route planning
+6. ✅ Earnings tracking
+7. ✅ Push notifications
+8. ✅ API endpoints for telesales integration
+
+Phase 2:
+- AI enrichment (Sokol + OpenAI)
+- WebRTC video calls
+- Recording and transcription
+- AI follow-up generation
+- Training center with roleplay
+
+Phase 3:
+- Referral system
+- Advanced analytics
+- Native app conversion (React Native)
+Want me to:
+
+Create this as a downloadable file you can paste directly into Replit?
+Add any additional sections?
+Create a separate prompt for the admin portal features that go into the existing telesales app?
+1
+
+
+1 step
+Checking if I should create a docx or just a markdown file for the Replit prompt
+
+Determined markdown format appropriate for Replit integration.
+
+I'll create a markdown file for you to download and paste directly into Replit.
+
+
+Creating the Recrowdly Replit prompt as a downloadable markdown file
+recrowdly-replit-prompt.md
+
+Orchestrated file creation and delivery logistics.
+
+View your Recrowdly Replit prompt
+
+Ready to paste directly into Replit Agent. The prompt includes the full tech stack, database schema, API endpoints, all features organized by priority phase, and the context about Gus's training methods and the three-actor sales pipeline.
+
+Want me to also create a separate prompt for the admin features that need to be added to your existing telesales web app?
+
+Recrowdly replit prompt
+Document · MD 
+
+
+
+
+
+
+
+
+
+Recrowdly replit prompt · MD
+Copy
+
+Recrowdly - Field Sales Rep Mobile App
+Overview
+Build a mobile-first progressive web app (PWA) called Recrowdly - a gig economy platform for field sales representatives selling AI automation and vibe coding services to local businesses (dental practices, law firms, lead-dependent businesses). The app follows an Uber-style hyperlocal model where reps are paid per business served.
+
+Tech Stack
+Frontend: React + TypeScript + Tailwind CSS (PWA-ready for future iOS/Android conversion)
+Backend: Node.js + Express or Next.js API routes
+Database: PostgreSQL with Prisma ORM
+Auth: Clerk or Auth.js with phone/email verification
+Payments: Stripe Connect (for rep payouts)
+Video: WebRTC integration for in-app video calls
+Maps: Google Maps API or Mapbox (routing, geolocation, nearby businesses)
+AI: OpenAI API for enrichment, call transcription, campaign generation
+External Data: Sokol API integration for business enrichment
+Background Checks: Open-source/generic integration (Checkr-style webhook pattern)
+Push Notifications: Firebase Cloud Messaging or OneSignal
+Storage: AWS S3 or Cloudflare R2 for video recordings
+User Roles & Apps
+1. Field Rep (This App - Recrowdly Mobile)
+Gig economy workers who show up to appointments, warm leads, handle resistance
+
+2. Appointment Setter (Existing Telesales Web App - Integration Only)
+Cold calls leads, books appointments, flags bad phone numbers
+
+3. Consultative Sales Closer (Separate Role)
+Does the actual close via Zoom or in-person after rep warms the lead
+
+4. Admin (Built into Existing Telesales Web App)
+Reviews applicants, posts jobs, views performance, manages territories
+
+Compensation Structure
+Display prominently throughout the app:
+
+$50 - Showing up to appointment (geolocation verified)
+$100 - Completing a Zoom consultation
+$1,000 - When the lead they warmed eventually closes (attributed to original field rep)
+Bonus kickers - For visiting nearby offices while in the neighborhood
+Cold call bonus - Incentive for adding businesses not already in the database
+Core Features
+1. Onboarding & Application Flow
+Job Discovery (Public)
+Landing page with job postings by city/region
+Self-service application start (no account needed to begin)
+Shareable job posting links for recruiting (e.g., recrowdly.com/jobs/miami)
+Application Flow
+Personal info collection
+Resume/work history (optional)
+Availability and territory preferences
+Video introduction (60-second pitch)
+KYC Verification
+Driver's license upload + OCR extraction
+Selfie verification (liveness check)
+Background check consent and initiation
+Status tracking: Pending → In Review → Approved/Rejected
+Webhook pattern for background check results
+Post-Approval Setup
+Stripe Connect onboarding for payouts
+Push notification permissions
+Calendar availability setup
+Territory selection
+2. Home Dashboard (Authenticated Rep)
+Go Live Toggle
+Large, prominent toggle switch
+When ON: Rep appears available, GPS tracking active, receives new appointments
+When OFF: No new appointments, existing commitments still visible
+Visual indicator of live status throughout app
+Earnings Summary
+Today's earnings (realized + pending)
+This week / This month views
+Breakdown by type ($50 shows / $100 zooms / $1,000 closes)
+Pending closes (leads warming in pipeline)
+Upcoming Appointments
+Next 3 appointments with:
+Business name and type (dental, law, etc.)
+Address with tap-to-navigate
+Scheduled time
+Estimated payout
+AI-generated context preview (expand for full)
+Money Left on Table (Urgency Engine)
+If not live during business hours: "You're missing out on $X in your area right now"
+Unclaimed appointments nearby
+Push notification integration for these alerts
+3. Appointments & Scheduling
+Appointment List View
+Filter: Today / This Week / All Upcoming / Completed
+Sort: Time / Distance / Payout
+Status badges: Scheduled → En Route → Checked In → Completed
+Appointment Detail View
+Business info (name, address, type, contact)
+AI Enrichment Panel (Sokol + OpenAI):
+Company overview and size
+Recent news/social activity
+Decision maker info
+Previous interactions (from telesales CRM)
+Industry-specific pain points
+Suggested talking points
+Recommended service packages
+Call recording from appointment setter (if available)
+Notes from telesales team
+One-tap navigation button
+Booking Calendar
+In-app calendar for self-booked appointments
+Availability blocks (syncs to internal visibility)
+Integrates with route planning
+Rolls up to admin dashboard in telesales app
+Self-Prospecting
+Map View: See nearby businesses (Google Places API)
+Color-coded: In database (blue) vs. New prospect (green = bonus eligible)
+Tap to view business details
+"Add to my route" button
+System Suggestions: AI-recommended businesses based on:
+Proximity to existing appointments
+Business type match
+No recent contact
+Manual Entry: Add any business with:
+Business name, address, contact
+How they found it (walk-by, referral, etc.)
+Cold call bonus eligibility flag
+4. Route Planning
+Route View
+Interactive map with all day's stops
+Optimized route suggestion
+Drag to reorder stops
+Time estimates between stops
+Total trip duration
+Turn-by-Turn Integration
+Deep link to Google Maps / Apple Maps / Waze
+Return to app after each stop
+Nearby Opportunities
+While en route, show nearby offices for kicker bonus
+"You're 5 min from [Business] - $25 bonus to drop in"
+Quick-add to route
+5. Check-In & Appointment Execution
+Geolocation Check-In
+"Check In" button activates within 100m of appointment
+GPS verification with timestamp
+Triggers $50 show-up earning
+Photo capture option (storefront/office)
+Resistance Handling Mode
+Quick-access panel for common objections:
+"No appointment scheduled"
+"Doctor/Owner isn't in"
+"We're not interested"
+"Call back later"
+Each objection shows:
+Gus's video response (15-30 sec)
+Script/talking points
+AI roleplay practice button
+In-App Video Call (WebRTC)
+Start Zoom-style consultation from app
+Auto-recording with consent prompt
+Screen share capability
+Triggers $100 Zoom earning on completion
+Consultation Recording
+Audio recording for all in-person consultations
+Transcription via AI
+Saved to appointment record
+Used for:
+Training and feedback
+AI-generated follow-up campaigns
+Quality review
+Check-Out
+Mark appointment complete
+Outcome selection:
+Warm lead (interested, needs follow-up)
+Hot lead (ready for closer)
+Not interested (with reason)
+Reschedule needed
+Bad data (wrong address, closed business, etc.)
+Notes field
+Next steps assignment
+6. AI-Powered Follow-Up Engine
+Post-Consultation Processing
+AI analyzes call recording/transcript
+Generates personalized follow-up content:
+Email draft referencing specific conversation points
+Text message sequence
+Phone call script for appointment setter
+Example: "I remember you mentioned wanting more root canal patients - we just added a model that does exactly that. Here's my calendar to book, I'll be in your neighborhood Tuesday."
+Follow-Up Queue
+List of leads requiring follow-up
+AI-suggested timing based on conversation
+Draft content ready for human review
+One-tap to edit and send (or send to appointment setter)
+Warm Lead Nurturing
+Leads marked "not responsive" enter automated nurture
+Rep notified when engagement detected
+Re-engagement talking points generated
+7. Training Center
+Video Library
+Organized by topic:
+Getting Started
+Handling Resistance (Gus's methods)
+Product Knowledge (AI automation, vibe coding)
+Industry-Specific (Dental, Legal, etc.)
+Closing Techniques
+Progress tracking
+Required vs. optional content
+New content notifications
+AI Roleplay Coach
+Interactive objection handling practice
+AI plays the resistant business owner
+Scenarios:
+"We don't have an appointment"
+"The doctor is too busy"
+"We already have a marketing company"
+"How much does it cost?"
+Real-time feedback on responses
+Score and improvement suggestions
+Leaderboard (optional gamification)
+Gus's Playbook
+Best practices documentation
+Real call recordings (anonymized) with commentary
+Situation-specific guidance
+Searchable knowledge base
+8. Earnings & Payments
+Earnings Dashboard
+Current balance (available for payout)
+Pending earnings (awaiting verification/close)
+Earnings history with filters
+Breakdown by earning type
+Transaction History
+Each appointment with payout status
+Bonus earnings itemized
+Referral earnings
+Deductions (if any)
+Payout Management (Stripe Connect)
+Connected bank account management
+Payout schedule (instant / daily / weekly)
+Payout history
+Tax documents (1099 access)
+9. Referral System
+Rep Referrals
+Unique referral link/code
+Share via SMS, email, social
+Track referral status:
+Signed up
+Completed KYC
+First appointment completed
+Referral bonus structure (configurable, e.g., $100 per qualified rep)
+Referral Earnings
+Separate section in earnings
+Lifetime referral stats
+10. Lead & CRM Functions
+Lead Flagging
+Flag phone numbers that don't work
+Flag bad addresses
+Flag closed businesses
+Flags route back to lead gen team via API
+Follow-Up Schedule
+Personal follow-up task list
+Reminders and notifications
+Integration with main appointment calendar
+Pipeline View
+Leads touched, organized by status
+Estimated pending earnings
+Days since last touch
+11. Notifications
+Push Notification Types
+New appointment assigned
+Appointment reminder (1 hour, 15 min)
+Money left on table alerts
+Lead status updates (your lead just closed = $1,000!)
+New training content
+Application status updates
+Payout completed
+In-App Notification Center
+All notifications in chronological list
+Mark read/unread
+Filter by type
+API Integration Requirements
+Integration with Existing Telesales Web App
+Build RESTful API endpoints for:
+
+POST /api/appointments - Create new appointment (from telesales)
+GET /api/appointments - List appointments (filterable)
+PUT /api/appointments/:id - Update appointment status
+POST /api/appointments/:id/checkin - Field rep check-in
+POST /api/appointments/:id/checkout - Field rep check-out
+
+GET /api/leads - Leads assigned to rep
+PUT /api/leads/:id - Update lead status
+POST /api/leads/:id/flag - Flag bad data
+
+GET /api/reps - List all reps (admin)
+GET /api/reps/:id - Rep detail with performance
+PUT /api/reps/:id/status - Approve/reject applicant
+
+POST /api/calendar/availability - Set rep availability
+GET /api/calendar/slots - Get available slots for booking
+
+POST /api/recordings - Upload consultation recording
+GET /api/recordings/:id/transcript - Get AI transcript
+
+POST /api/followups - Create follow-up task
+GET /api/followups - List follow-ups for rep
+PUT /api/followups/:id - Mark complete/reschedule
+
+Webhook endpoints for:
+- Background check status updates
+- Stripe Connect events
+- Lead close events (trigger $1,000 payout)
+External API Integrations
+Sokol API: Business enrichment data
+OpenAI API: Transcription, content generation, roleplay AI
+Google Maps API: Geocoding, routing, places search
+Stripe Connect: Payouts and account management
+Firebase/OneSignal: Push notifications
+Twilio (optional): SMS notifications and follow-up sends
+Database Schema (Key Tables)
+sql
+-- Users (reps)
+CREATE TABLE users (
+  id UUID PRIMARY KEY,
+  email VARCHAR(255) UNIQUE,
+  phone VARCHAR(20),
+  name VARCHAR(255),
+  status VARCHAR(50) DEFAULT 'applicant', -- applicant/approved/suspended
+  stripe_connect_id VARCHAR(255),
+  kyc_status VARCHAR(50),
+  background_check_status VARCHAR(50),
+  territory JSONB,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Applications
+CREATE TABLE applications (
+  id UUID PRIMARY KEY,
+  user_id UUID REFERENCES users(id),
+  resume_url VARCHAR(500),
+  video_url VARCHAR(500),
+  license_data JSONB,
+  background_check_id VARCHAR(255),
+  status VARCHAR(50) DEFAULT 'pending',
+  reviewed_by UUID,
+  reviewed_at TIMESTAMP
+);
+
+-- Appointments
+CREATE TABLE appointments (
+  id UUID PRIMARY KEY,
+  rep_id UUID REFERENCES users(id),
+  business_id UUID REFERENCES businesses(id),
+  scheduled_at TIMESTAMP,
+  status VARCHAR(50) DEFAULT 'scheduled',
+  checkin_at TIMESTAMP,
+  checkout_at TIMESTAMP,
+  outcome VARCHAR(100),
+  recording_url VARCHAR(500),
+  transcript TEXT,
+  ai_summary TEXT,
+  payout_amount DECIMAL(10,2),
+  payout_status VARCHAR(50) DEFAULT 'pending'
+);
+
+-- Businesses
+CREATE TABLE businesses (
+  id UUID PRIMARY KEY,
+  name VARCHAR(255),
+  type VARCHAR(100), -- dental, law, etc.
+  address VARCHAR(500),
+  lat DECIMAL(10,8),
+  lng DECIMAL(11,8),
+  phone VARCHAR(20),
+  email VARCHAR(255),
+  contact_name VARCHAR(255),
+  source VARCHAR(50), -- telesales/self-prospected
+  in_database_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Leads
+CREATE TABLE leads (
+  id UUID PRIMARY KEY,
+  business_id UUID REFERENCES businesses(id),
+  rep_id UUID REFERENCES users(id),
+  status VARCHAR(50),
+  follow_up_date DATE,
+  notes TEXT,
+  close_value DECIMAL(10,2),
+  originated_from UUID REFERENCES appointments(id)
+);
+
+-- Earnings
+CREATE TABLE earnings (
+  id UUID PRIMARY KEY,
+  rep_id UUID REFERENCES users(id),
+  appointment_id UUID REFERENCES appointments(id),
+  type VARCHAR(50), -- show/zoom/close/bonus/referral
+  amount DECIMAL(10,2),
+  status VARCHAR(50) DEFAULT 'pending', -- pending/verified/paid
+  paid_at TIMESTAMP
+);
+
+-- Referrals
+CREATE TABLE referrals (
+  id UUID PRIMARY KEY,
+  referrer_id UUID REFERENCES users(id),
+  referred_id UUID REFERENCES users(id),
+  status VARCHAR(50),
+  bonus_paid BOOLEAN DEFAULT FALSE,
+  bonus_amount DECIMAL(10,2)
+);
+
+-- Training Progress
+CREATE TABLE training_progress (
+  id UUID PRIMARY KEY,
+  rep_id UUID REFERENCES users(id),
+  content_id VARCHAR(255),
+  completed_at TIMESTAMP,
+  score INTEGER
+);
+
+-- Follow Ups
+CREATE TABLE follow_ups (
+  id UUID PRIMARY KEY,
+  rep_id UUID REFERENCES users(id),
+  lead_id UUID REFERENCES leads(id),
+  scheduled_at TIMESTAMP,
+  ai_content JSONB,
+  sent_at TIMESTAMP,
+  channel VARCHAR(50) -- email/sms/call
+);
+UI/UX Guidelines
+Design Principles
+Mobile-first, thumb-friendly
+High contrast for outdoor visibility
+Large tap targets for on-the-go use
+Minimal typing required (voice input where possible)
+Earnings always visible (motivation)
+Color Scheme
+Primary: Energetic, motivational (suggest orange or green)
+Earnings: Always in green
+Alerts/urgency: Red/orange
+Success states: Green checks
+Key Screens (Priority Order)
+Home Dashboard
+Appointment Detail with AI Enrichment
+Route Planning Map
+Check-In Flow
+Earnings Dashboard
+Training Center
+Application/Onboarding Flow
+MVP Scope (Phase 1)
+Build these first:
+
+✅ Application flow with KYC
+✅ Home dashboard with Go Live toggle
+✅ Appointment list and detail views
+✅ Geolocation check-in/check-out
+✅ Basic route planning
+✅ Earnings tracking
+✅ Push notifications
+✅ API endpoints for telesales integration
+Phase 2
+AI enrichment (Sokol + OpenAI)
+WebRTC video calls
+Recording and transcription
+AI follow-up generation
+Training center with roleplay
+Phase 3
+Referral system
+Advanced analytics
+Native app conversion (React Native)
+Additional Context
+Target Verticals
+Dental practices (high-value procedures like root canals)
+Law firms
+Any business needing leads and operational improvements
+The Three Actors in the Sales Pipeline
+Role	Tool	Function
+Appointment Setter	Existing telesales web app	Cold calls leads, books field appointments
+Gig Economy Field Rep	Recrowdly (this app)	Shows up, warms leads, handles resistance
+Consultative Closer	Separate system	Closes the deal via Zoom/in-person
+Key Training Focus
+Reps will encounter resistance (no appointment scheduled, decision maker unavailable, etc.). Training content from Gus (top performing rep) should address:
+
+Video walkthroughs of common objections
+AI-powered roleplay scenarios
+Script templates and talking points
+Lead Flow
+Lead gen team sources leads
+Appointment setter calls and books
+Field rep shows up, warms lead
+If hot → Consultative closer takes over
+Field rep earns $1,000 when lead closes (even though closer did final sale)
+Follow-Up System
+AI analyzes consultation recordings
+Generates personalized email/text drafts
+Human reviews and hits send
+Example: "I remember you said you wanted more root canal patients - we just added a model for that. I'll be in your neighborhood Tuesday."
+
+
+
+
+Prompt Genie Logo
