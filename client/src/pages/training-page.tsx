@@ -1,18 +1,28 @@
 import Layout from "@/components/layout/Layout";
 import { TRAINING_VIDEOS } from "@/lib/mockData";
-import { Play, CheckCircle, X } from "lucide-react";
+import { Play, CheckCircle, Volume2, VolumeX } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger, DialogClose, DialogTitle } from "@/components/ui/dialog";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import gusAvatar from "@assets/generated_images/professional_headshot_of_gus_the_trainer.png";
-import { useState } from "react";
+import gusIntroVideo from "@assets/generated_videos/friendly_sales_trainer_gus_talking_to_camera.mp4";
+import { useState, useRef } from "react";
+import { cn } from "@/lib/utils";
 
 export default function TrainingPage() {
-  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+  const [isMuted, setIsMuted] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
 
   return (
     <Layout>
-      <div className="p-6">
+      <div className="p-6 pb-24">
         <div className="flex items-center gap-4 mb-6">
           <div className="relative">
             <img src={gusAvatar} alt="Gus" className="w-16 h-16 rounded-full border-2 border-primary object-cover" />
@@ -23,6 +33,34 @@ export default function TrainingPage() {
           <div>
             <h1 className="font-display font-bold text-2xl">Training with Gus</h1>
             <p className="text-slate-500 text-sm">Master the field sales craft.</p>
+          </div>
+        </div>
+
+        {/* Featured Daily Tip */}
+        <div className="mb-8 relative rounded-2xl overflow-hidden shadow-xl aspect-[16/9] group">
+          <video 
+            ref={videoRef}
+            src={gusIntroVideo}
+            className="w-full h-full object-cover"
+            autoPlay 
+            loop 
+            muted={isMuted}
+            playsInline
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4">
+             <div className="flex justify-between items-end">
+               <div>
+                 <div className="bg-primary text-white text-[10px] font-bold px-2 py-1 rounded w-fit mb-2 uppercase tracking-wider">Daily Tip</div>
+                 <h3 className="text-white font-bold text-lg leading-tight">The "Soft No" Reversal</h3>
+                 <p className="text-white/80 text-xs mt-1">Gus breaks down how to handle "Send me info".</p>
+               </div>
+               <button 
+                 onClick={toggleMute}
+                 className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-white/30 transition-colors"
+               >
+                 {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+               </button>
+             </div>
           </div>
         </div>
 
@@ -41,7 +79,7 @@ export default function TrainingPage() {
           {TRAINING_VIDEOS.map(video => (
             <Dialog key={video.id}>
               <DialogTrigger asChild>
-                <Card className="overflow-hidden border-none shadow-sm hover:shadow-md transition-shadow group cursor-pointer">
+                <Card className="overflow-hidden border-none shadow-sm hover:shadow-md transition-shadow group cursor-pointer bg-white">
                   <div className="relative h-48 bg-slate-200">
                     <img src={video.thumbnail} alt={video.title} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" />
                     <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
