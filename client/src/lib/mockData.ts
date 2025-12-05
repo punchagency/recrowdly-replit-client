@@ -57,25 +57,40 @@ export const MOCK_JOBS: Job[] = [
 export const TRAINING_VIDEOS = [
   {
     id: 1,
-    title: "Handling 'The Doctor Isn't In'",
+    title: "Handling 'The Doctor Isn't In' (Gatekeepers)",
     duration: "3:45",
-    thumbnail: "/attached_assets/generated_images/professional_headshot_of_gus_the_trainer.png",
+    thumbnail: "https://img.youtube.com/vi/CQk_iO8I6wU/maxresdefault.jpg", // Jeremy Miner
+    youtubeId: "CQk_iO8I6wU", // Jeremy Miner - Objection Handling
     instructor: "Gus",
+    description: "Learn how to bypass the front desk and get straight to the decision maker using the 'Help, don't sell' method."
   },
   {
     id: 2,
-    title: "The $1,000 Handoff",
+    title: "The $1,000 Handoff: Setting the Appointment",
     duration: "5:20",
-    thumbnail: "/attached_assets/generated_images/professional_headshot_of_gus_the_trainer.png",
+    thumbnail: "https://img.youtube.com/vi/W3Xb9_t-gGg/maxresdefault.jpg", // Alex Hormozi
+    youtubeId: "W3Xb9_t-gGg", // Alex Hormozi - Sales
     instructor: "Gus",
+    description: "The crucial transition from warming the lead to locking in the Zoom call. Don't leave money on the table."
   },
   {
     id: 3,
-    title: "Objection Handling: 'We're Happy'",
+    title: "Objection Handling: 'We're Happy with X'",
     duration: "4:15",
-    thumbnail: "/attached_assets/generated_images/professional_headshot_of_gus_the_trainer.png",
+    thumbnail: "https://img.youtube.com/vi/M4_8PoR6Dsk/maxresdefault.jpg", // Jordan Belfort
+    youtubeId: "M4_8PoR6Dsk", // Jordan Belfort - Sell me this pen
     instructor: "Gus",
+    description: "When they say they already have a provider, here is the exact script to pivot to AI opportunities."
   },
+  {
+    id: 4,
+    title: "Door-to-Door Mastery: First 10 Seconds",
+    duration: "8:12",
+    thumbnail: "https://img.youtube.com/vi/1q9f5l_v6yA/maxresdefault.jpg", // Sam Taggart D2D
+    youtubeId: "1q9f5l_v6yA", // Sam Taggart - D2D
+    instructor: "Gus",
+    description: "How to break the ice instantly and avoid the immediate 'No thanks'."
+  }
 ];
 
 export const EARNINGS_STATS = {
