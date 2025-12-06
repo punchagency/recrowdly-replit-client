@@ -111,16 +111,12 @@ export default function TrainingPage() {
                   <DialogTitle>{video.title}</DialogTitle>
                 </VisuallyHidden>
                 <div className="aspect-video w-full bg-black relative">
-                   <iframe 
-                    width="100%" 
-                    height="100%" 
-                    src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=1`} 
-                    title={video.title} 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowFullScreen
-                    className="absolute inset-0"
-                  ></iframe>
+                   <video 
+                    src={video.videoSrc}
+                    controls
+                    autoPlay
+                    className="w-full h-full object-contain"
+                   />
                 </div>
                 <div className="p-4 bg-white text-slate-900">
                   <h2 className="font-display font-bold text-xl mb-1">{video.title}</h2>
