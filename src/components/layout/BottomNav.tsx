@@ -19,8 +19,7 @@ export default function BottomNav() {
         {navItems.map((item) => {
           const isActive = location === item.href;
           return (
-            <Link key={item.label} href={item.href}>
-              <a className={cn(
+            <Link key={item.label} href={item.href}  className={cn(
                 "flex flex-col items-center gap-1 p-2 transition-colors duration-200",
                 isActive ? "text-primary" : "text-slate-400 hover:text-slate-600"
               )}>
@@ -29,7 +28,6 @@ export default function BottomNav() {
                 {isActive && (
                   <span className="absolute -top-[1px] w-8 h-[2px] bg-primary rounded-full" />
                 )}
-              </a>
             </Link>
           );
         })}

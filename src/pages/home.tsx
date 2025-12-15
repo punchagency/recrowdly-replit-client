@@ -5,7 +5,7 @@ import { MOCK_JOBS, EARNINGS_STATS } from "@/lib/mockData";
 import { Bell, UserCircle, TrendingUp, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import generatedLogo from "@assets/generated_images/minimalist_app_logo_for_recrowdly.png";
+import generatedLogo from "@/assets/generated_images/minimalist_app_logo_for_recrowdly.png";
 
 export default function Home() {
   return (
@@ -61,14 +61,14 @@ export default function Home() {
               <span className="text-xs font-medium text-primary cursor-pointer">View All</span>
             </Link>
           </div>
-          
+
           <div className="space-y-3">
             {MOCK_JOBS.slice(0, 3).map(job => (
               <JobCard key={job.id} job={job} />
             ))}
           </div>
         </section>
-        
+
         {/* Training Teaser */}
         <section className="pt-2">
           <div className="bg-slate-900 rounded-2xl p-5 text-white relative overflow-hidden">

@@ -4,8 +4,8 @@ import { Play, CheckCircle, Volume2, VolumeX } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger, DialogClose, DialogTitle } from "@/components/ui/dialog";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
-import gusAvatar from "@assets/generated_images/professional_headshot_of_gus_the_trainer.png";
-import gusIntroVideo from "@assets/generated_videos/friendly_sales_trainer_gus_talking_to_camera.mp4";
+import gusAvatar from "@/assets/generated_images/professional_headshot_of_gus_the_trainer.png";
+import gusIntroVideo from "@/assets/generated_videos/friendly_sales_trainer_gus_talking_to_camera.mp4";
 import { useState, useRef } from "react";
 import { cn } from "@/lib/utils";
 

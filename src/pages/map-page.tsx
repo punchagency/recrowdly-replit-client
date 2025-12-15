@@ -1,7 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import { MOCK_JOBS } from "@/lib/mockData";
 import { MapPin, Navigation } from "lucide-react";
-import mapBg from "@assets/generated_images/stylized_city_map_background_for_dashboard.png";
+import mapBg from "@/assets/generated_images/stylized_city_map_background_for_dashboard.png";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -13,22 +13,22 @@ export default function MapPage() {
     <Layout>
       <div className="relative h-[calc(100vh-80px)] w-full bg-slate-100 overflow-hidden">
         {/* Map Background */}
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center opacity-80"
           style={{ backgroundImage: `url(${mapBg})` }}
         />
-        
+
         {/* Mock Pins */}
         {MOCK_JOBS.map((job, index) => (
-          <div 
+          <div
             key={job.id}
             className={cn(
               "absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300",
               selectedJobId === job.id ? "z-20 scale-110" : "z-10"
             )}
-            style={{ 
-              top: `${30 + (index * 15)}%`, 
-              left: `${20 + (index * 20)}%` 
+            style={{
+              top: `${30 + (index * 15)}%`,
+              left: `${20 + (index * 20)}%`
             }}
             onClick={() => setSelectedJobId(job.id)}
           >
@@ -48,8 +48,8 @@ export default function MapPage() {
 
         {/* User Location Pulse */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-           <div className="w-4 h-4 bg-blue-500 rounded-full border-2 border-white shadow-lg z-10 relative" />
-           <div className="absolute inset-0 bg-blue-500 rounded-full animate-ping opacity-50" />
+          <div className="w-4 h-4 bg-blue-500 rounded-full border-2 border-white shadow-lg z-10 relative" />
+          <div className="absolute inset-0 bg-blue-500 rounded-full animate-ping opacity-50" />
         </div>
 
         {/* Floating Controls */}
