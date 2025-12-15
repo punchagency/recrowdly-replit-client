@@ -4,7 +4,7 @@ import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Phone, Globe, Clock, CheckCircle, Video, AlertCircle, Sparkles } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import mapBg from "@assets/generated_images/stylized_city_map_background_for_dashboard.png";
+import mapBg from "@/assets/generated_images/stylized_city_map_background_for_dashboard.png";
 
 export default function JobDetailPage() {
   const [match, params] = useRoute("/job/:id");
@@ -17,12 +17,12 @@ export default function JobDetailPage() {
       <div className="relative">
         {/* Header Image/Map */}
         <div className="h-48 w-full bg-slate-200 relative overflow-hidden">
-           <div 
+          <div
             className="absolute inset-0 bg-cover bg-center opacity-50"
             style={{ backgroundImage: `url(${mapBg})` }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
-          
+
           <Link href="/jobs">
             <Button variant="ghost" size="icon" className="absolute top-4 left-4 bg-white/80 backdrop-blur hover:bg-white rounded-full shadow-sm">
               <ArrowLeft className="w-5 h-5" />
@@ -91,7 +91,7 @@ export default function JobDetailPage() {
 
             <Card className="border-slate-100 overflow-hidden">
               <div className="bg-slate-50 px-4 py-2 border-b border-slate-100">
-                 <span className="text-xs font-bold text-slate-600 uppercase tracking-wider">Business Context</span>
+                <span className="text-xs font-bold text-slate-600 uppercase tracking-wider">Business Context</span>
               </div>
               <div className="p-4 grid grid-cols-2 gap-4">
                 <div>
@@ -107,8 +107,8 @@ export default function JobDetailPage() {
                   <div className="font-medium text-slate-800">Tue/Thu 2pm</div>
                 </div>
                 <div>
-                   <div className="text-xs text-slate-400 mb-1">Pain Point</div>
-                   <div className="font-medium text-slate-800">Missed Calls</div>
+                  <div className="text-xs text-slate-400 mb-1">Pain Point</div>
+                  <div className="font-medium text-slate-800">Missed Calls</div>
                 </div>
               </div>
             </Card>

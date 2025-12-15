@@ -1,13 +1,13 @@
 import { User, MapPin, Briefcase, Video, UserCircle } from "lucide-react";
-import video1 from "@assets/generated_videos/gus_roleplaying_handling_a_gatekeeper_at_a_reception_desk.mp4";
-import video2 from "@assets/generated_videos/gus_demonstrating_the_appointment_setting_handoff.mp4";
-import video3 from "@assets/generated_videos/gus_teaching_objection_handling_techniques.mp4";
-import video4 from "@assets/generated_videos/gus_demonstrating_first_impression_at_a_door.mp4";
+import video1 from "@/assets/generated_videos/gus_roleplaying_handling_a_gatekeeper_at_a_reception_desk.mp4";
+import video2 from "@/assets/generated_videos/gus_demonstrating_the_appointment_setting_handoff.mp4";
+import video3 from "@/assets/generated_videos/gus_teaching_objection_handling_techniques.mp4";
+import video4 from "@/assets/generated_videos/gus_demonstrating_first_impression_at_a_door.mp4";
 
-import thumb1 from "@assets/generated_images/thumbnail_for_gatekeeper_video.png";
-import thumb2 from "@assets/generated_images/thumbnail_for_handoff_video.png";
-import thumb3 from "@assets/generated_images/thumbnail_for_objection_handling_video.png";
-import thumb4 from "@assets/generated_images/thumbnail_for_first_impression_video.png";
+import thumb1 from "@/assets/generated_images/thumbnail_for_gatekeeper_video.png";
+import thumb2 from "@/assets/generated_images/thumbnail_for_handoff_video.png";
+import thumb3 from "@/assets/generated_images/thumbnail_for_objection_handling_video.png";
+import thumb4 from "@/assets/generated_images/thumbnail_for_first_impression_video.png";
 
 export interface Job {
   id: string;
